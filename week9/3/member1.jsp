@@ -6,8 +6,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/sample.css" />
-    <title>CSS 객체xvgfsdf 선택 실습</title>
+    <title>CSS 객체 선택 실습</title>
+=======
+    <link rel="stylesheet" href="./css/sample.css" />
+    <title>CSS 객체 선택 실습</title>
+>>>>>>> 000d9888f72dc5d74ad3beeacd504a1712a6fb39
 </head>
 
 <body>
