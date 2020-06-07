@@ -1,0 +1,15 @@
+div.header_inner{
+    width: 1470px;
+    height: 30px;
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+strong.header_title{
+    left: 30px;
+}
+
+a.email {
+    float: right;
+    right: 30px;
+}

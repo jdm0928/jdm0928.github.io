@@ -1,0 +1,71 @@
+section.ability {
+    width: 1470px;
+    height: 1000px;
+    margin: 20px;
+}
+
+article.learn {
+    width: 1470px;
+    height: 300px;
+}
+
+h3.learn_title_1{
+    float: left;
+    width: 680px;
+
+}
+
+ul.learning_list{
+    float: left;
+    width: 700px;
+    height: 250px;
+}
+
+li.learning_list_item{
+
+}
+
+h3.learn_title_2{
+    float: right;   
+    width: 680px;
+}
+
+ul.learn_list{
+    float: right;
+    width: 700px;
+    height: 250px;
+}
+
+li.learn_list_item{
+
+}
+
+article.skill{
+    top: 50px;
+    width: 1470px;
+    height: 600px;
+
+}
+
+h3.skill_title{
+    top: 35px;
+    text-align: center;
+    float: left;
+    width: 400px;
+    height: 500px;
+    left: 100px;
+}
+
+ul.skill_list{
+    top: 45px;
+    float: right;
+    width: 800px;
+    height: 500px;
+    right: 100px;
+}
+
+li.skill_list_item{
+    top: 35px;
+    margin-top: 50px;
+
+}
