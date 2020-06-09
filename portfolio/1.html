@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style>
+        * {
+            border: 1px solid black;
+        }
+
+        body {
+            font-size: 12px;
+            line-height: 16px;
+            color: #202020;
+        }
+
+        #container {
+            position: relative;
+            width: 1130px;
+            margin: 0 auto;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+            padding: 20px 30px;
+            padding-top: 20px;
+            padding-right: 30px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        #container::after {
+            display: table;
+            clear: both;
+            table-layout: fixed;
+            content: '';
+        }
+    </style>
+    <title></title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header class="header"></header>
+        <div id="container">
+            <section class="about"></section>
+            <section class="contact"></section>
+            <section class="ability"></section>
+            <section class="work"></section>
+        </div>
+        <footer class="footer"></footer>
+    </div>
+
+</body>
+
+</html>

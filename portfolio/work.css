@@ -1,12 +1,14 @@
 section.work {
+    background-color: #fafafa;
+    position: relative;
     margin: 20px;
-    width: 1470px;
-    height: 3025px;
+    width: 91.875em;
+    height: 189.0625em;
 }
 
 article {
-    width: 1470px;
-    height: 500px;
+    width: 91.875;
+    height: 31.25em;
 }
 
 h3 {

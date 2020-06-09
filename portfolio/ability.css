@@ -1,11 +1,13 @@
 section.ability {
-    width: 1470px;
-    height: 1000px;
+    position: relative;
+    background-color: #fafafa;
+    width: 91.875em;
+    height: 62.5em;
     margin: 20px;
 }
 
 article.learn {
-    width: 1470px;
+    width: 91.875em;
     height: 300px;
 }
 
@@ -17,7 +19,7 @@ h3.learn_title_1{
 
 ul.learning_list{
     float: left;
-    width: 700px;
+    width: 42.5em;
     height: 250px;
 }
 
@@ -32,7 +34,7 @@ h3.learn_title_2{
 
 ul.learn_list{
     float: right;
-    width: 700px;
+    width: 42.5em;
     height: 250px;
 }
 
@@ -42,12 +44,13 @@ li.learn_list_item{
 
 article.skill{
     top: 50px;
-    width: 1470px;
+    width: 91.875em;
     height: 600px;
 
 }
 
 h3.skill_title{
+    font-size: 45px;
     top: 35px;
     text-align: center;
     float: left;

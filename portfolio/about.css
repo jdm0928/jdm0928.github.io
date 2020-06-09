@@ -1,7 +1,9 @@
 section.about {
+    position: relative;
+    background-color: #fff;
     margin: 20px;
-    width: 1470px;
-    height: 530px;
+    width: 91.875em;
+    height: 60em;
 }
 
 div.about_inner {
@@ -21,24 +23,45 @@ div.profile_photo {
 
 span.photo {
     text-align: center;
-    width: 300px;
-    height: 300px;
-    left: 100px;
+    width: 200px;
+    height: 350px;
+    left: 140px;
 }
 
-div.about_text{
+img.photo {
+    width: 200px;
+    height: 350px;
+}
+
+div.about_text_1{
     float: right;
     right: 100px;
     height: 500px;
-    width: 500px;
+    width: 600px;
     text-align: center; 
 }
 
-p.about_text_item{
-    top: 80px;
+div.about_text_2{
+    float: left;
+    left: 100px;
+    height: 400px;
+    width: 1270px;
+    margin-top: 30px;
+}
+
+h2.about_text_item_1 {
+    font-size: 40px;
+    top: 150px;
+    margin-top: 30px;
+}
+
+p.about_text_item_2{
+    font-size: 20px;
+    top: 60px;
     margin-top: 30px;
 }
 
 p.profile_name {
+    font-size: 20px;
     text-align: center; 
 }

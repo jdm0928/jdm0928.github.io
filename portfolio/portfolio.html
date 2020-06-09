@@ -11,31 +11,57 @@
             margin: 0;
             padding: 0;
             border: 1px solid black;
+            font-style: normal;
+            box-sizing: border-box;
+            vertical-align: baseline;
+            background-color: #fff;
         }
 
-        footer {
-            width: 1500px;
-            height: 50px;
-        }
-
-        div.all {
-            width: 1500px;
-        }
+        #all {}
 
         body {
-            width: 1510px;
+            /*box-sizing: border-box;
+            position: relative;
+            min-height: 100%;
+            height: 100%;
+            min-width: 500px;
+            overflow-y: auto;
+            color: #141414;
+            text-align: left;
+            font-weight: 400;
+            line-height: 1.5;
+            background-color: #fff;
+            vertical-align: baseline;*/
+        }
+
+        #container {
+            position: relative;
+            width: 1500px;
+            margin: 0 auto;
+            margin-top: 0px;
+            margin-right: auto;
+            margin-bottom: 0px;
+            margin-left: auto;
+        }
+
+        #container::after {
+            display: table;
+            clear: both;
+            table-layout: fixed;
+            content: '';
         }
     </style>
-    <link rel= "stylesheet" type="text/css" href="header.css">
-    <link rel= "stylesheet" type="text/css" href="about.css">
-    <link rel= "stylesheet" type="text/css" href="ability.css">
-    <link rel= "stylesheet" type="text/css" href="work.css">
-    <link rel= "stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="ability.css">
+    <link rel="stylesheet" type="text/css" href="work.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <title>e-PortFolio 20191353 장동민</title>
 </head>
 
 <body>
-    <div class="all">
+    <div id="all">
         <header>
             <div class="header_inner">
                 <strong class="header_title">Doguri's e-PortFolio</strong>
@@ -43,102 +69,131 @@
             </div>
         </header>
 
-        <section class="about">
-            <div class="about_inner">
-                <div class="profile">
-                    <div class="profile_photo">
-                        <span class="photo" style="display: block;" href="">프로필 사진</span>
-                    </div>
+        <div id="container">
+            <section class="about">
+                <div class="about_inner">
+                    <div class="profile">
+                        <div class="profile_photo">
+                            <span class="photo" style="display: block;"><img class="photo"
+                                    src="https://jdm0928.github.io/portfolio/2017042000056_0.jpg"></span>
+                        </div>
 
-                    <div class="profile_info">
-                        <p class="profile_name">Doguri @장동민</p>
+                        <div class="profile_info">
+                            <p class="profile_name">Doguri @ 장동민</p>
+                        </div>
                     </div>
+                </div>
+
+                <div class="about_text_1">
+                    <h2 class="about_text_item_1">
+                        "반갑습니다! 저는"
+                        <br><br>
+                        "~"
+                        <br><br>
+                        "대학생이에요."
+                    </h2>
+                    
+                </div>
+
+                <div class="about_text_2">
+                    <p class="about_text_item_2">안녕하세요, ~ 장동민입니다.</p>
+                    <p class="about_text_item_2">현재 대전대학교 컴퓨터공학과를 다니고 있습니다.</p>
+                    <p class="about_text_item_2">3</p>
+                    <p class="about_text_item_2">4</p>
+                    <p class="about_text_item_2">5</p>
+                </div>
+            </section>
+
+            <section class="contact">contact</section>
+
+            <section class="ability">
+                <article class="learn">
+                    <h3 class="learn_title_1">배우고 있는 과목</h3>
+                    <h3 class="learn_title_2">배우고 싶거나 배울 과목</h3>
+                    <ul class="learning_list">
+                        <li class="learning_list_item"></li>
+                        <li class="learning_list_item"></li>
+                        <li class="learning_list_item"></li>
+                    </ul>
+                    <ul class="learn_list">
+                        <li class="learn_list_item"></li>
+                        <li class="learn_list_item"></li>
+                        <li class="learn_list_item"></li>
+                        <li class="learn_list_item"></li>
+                    </ul>
+                </article>
+
+                <article class="skill">
+                    <h3 class="skill_title">
+                        <br /><br />
+                        제가 가장<br />
+                        잘하는 일을<br />
+                        소개합니다
+                    </h3>
+                    <ul class="skill_list">
+                        <li class="skill_list_item"></li>
+                        <li class="skill_list_item"></li>
+                        <li class="skill_list_item"></li>
+                        <li class="skill_list_item"></li>
+                        <li class="skill_list_item"></li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="work">
+                <article class="project">
+                    <div class="project_inner">
+                        <h2 class="project_title">프로젝트</h2>
+                        <div class="project_text"></div>
+                    </div>
+                </article>
+
+                <article class="competition">
+                    <div class="competition_inner">
+                        <h3 class="competition_title">각종 대회 실적</h3>
+                        <div class="competition_text"></div>
+                    </div>
+                </article>
+
+                <article class="hackathon">
+                    <div class="hackathon_inner">
+                        <h3 class="hackathon_title">해커톤</h3>
+                        <div class="hackathon_text"></div>
+                    </div>
+                </article>
+
+                <article class="capstone">
+                    <div class="capstone_inner">
+                        <h3 class="capstone_title">캡스톤</h3>
+                        <div class="capstone_text"></div>
+                    </div>
+                </article>
+
+                <article class="club">
+                    <div class="club_inner">
+                        <h3 class="club_title">동아리</h3>
+                        <div class="club_text"></div>
+                    </div>
+                </article>
+
+                <article class="certificate">
+                    <div class="certificate_inner">
+                        <h3 class="certificate_title">자격증</h3>
+                        <div class="certificat_text"></div>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <footer>
+            <div class="footer_inner">
+                <div class="sns">
+                    <a class="footer_http_1" href="https://github.com/" target="_blank">GitHub</a>
+                    <a class="footer_copyright">&copy; 2020 Doguri</a>
+                    <a class="footer_madeby">Made by Doguri</a>
                 </div>
             </div>
-
-            <div class="about_text">
-                <p class="about_text_item">안녕하세요, IT쪽을 꿈꾸고 있는 장동민입니다.</p>
-                <p class="about_text_item">2</p>
-                <p class="about_text_item">3</p>
-                <p class="about_text_item">4</p>
-                <p class="about_text_item">5</p>
-            </div>
-        </section>
-
-        <section class="ability">
-            <article class="learn">
-                <h3 class="learn_title_1">배우고 있는 과목</h3>
-                <h3 class="learn_title_2">배우고 싶거나 배울 과목</h3>
-                <ul class="learning_list">
-                    <li class="learning_list_item"></li>
-                </ul>
-                <ul class="learn_list">
-                    <li class="learn_list_item"></li>
-                </ul>
-            </article>
-
-            <article class="skill">
-                <h3 class="skill_title">
-                    제가 가장<br />
-                    잘하는 일을<br />
-                    소개합니다
-                </h3>
-                <ul class="skill_list">
-                    <li class="skill_list_item"></li>
-                    <li class="skill_list_item"></li>
-                    <li class="skill_list_item"></li>
-                    <li class="skill_list_item"></li>
-                    <li class="skill_list_item"></li>
-                </ul>
-            </article>
-        </section>
-
-        <section class="work">
-            <article class="project">
-                <div class="project_inner">
-                    <h2 class="project_title">프로젝트</h2>
-                    <div class="project_text"></div>
-                </div>
-            </article>
-
-            <article class="competition">
-                <div class="competition_inner">
-                    <h3 class="competition_title">각종 대회 실적</h3>
-                    <div class="competition_text"></div>
-                </div>
-            </article>
-
-            <article class="hackathon">
-                <div class="hackathon_inner">
-                    <h3 class="hackathon_title">해커톤</h3>
-                    <div class="hackathon_text"></div>
-                </div>
-            </article>
-
-            <article class="capstone">
-                <div class="capstone_inner">
-                    <h3 class="capstone_title">캡스톤</h3>
-                    <div class="capstone_text"></div>
-                </div>
-            </article>
-
-            <article class="club">
-                <div class="club_inner">
-                    <h3 class="club_title">동아리</h3>
-                    <div class="club_text"></div>
-                </div>
-            </article>
-
-            <article class="certificate">
-                <div class="certificate_inner">
-                    <h3 class="certificate_title">자격증</h3>
-                    <div class="certificat_text"></div>
-                </div>
-            </article>
-        </section>
-
-        <section class="contact">contact</section>
-        <footer>footer</footer>
+        </footer>
 
 
     </div>

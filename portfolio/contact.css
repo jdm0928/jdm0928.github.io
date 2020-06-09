@@ -1,5 +1,7 @@
 section.contact {
-    width: 1470px;
+    position: relative;
+    background-color: #fff;
+    width: 91.875em;
     height: 200px;
     margin: 20px;
 }
