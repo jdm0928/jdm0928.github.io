@@ -1,118 +1,159 @@
 section.work {
-    background-color: #fafafa;
     position: relative;
+    margin: 20px 20px 0px 20px;
+    width: 1460px;
+    height: 3900px;
+    font-weight: bold;
+}
+
+
+#project {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0px 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+#competition {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+#hackathon {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+#capstone {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+#club {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+#certificate {
+    width: 1400px;
+    height: 600px;
+    padding: 20px;
+    margin: 50px 0 50px 0;
+    left: 30px;
+    background-color: #CAEDF3;
+    border-radius: 5%;
+}
+
+
+p.project_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
     margin: 20px;
-    width: 91.875em;
-    height: 189.0625em;
-}
-
-article {
-    width: 91.875;
-    height: 31.25em;
-}
-
-h3 {
-    padding: 10px;
-}
-
-
-article.project {
-
-}
-
-div.project_inner {
-
-}
-
-h2.project_title {
-
 }
 
 div.project_text {
-
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }
 
 
-article.competition {
-
-}
-
-div.competition_inner {
-
-}
-
-h2.competition_title {
-
+p.competition_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
+    margin: 20px;
 }
 
 div.competition_text {
-
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }
 
 
-article.hackathon {
-
-}
-
-div.hackathon_inner {
-
-}
-
-h2.hackathon_title {
-
+p.hackathon_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
+    margin: 20px;
 }
 
 div.hackathon_text {
-
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }
 
 
-article.capstone {
-
-}
-
-div.capstone_inner {
-
-}
-
-h2.capstone_title {
-
+p.capstone_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
+    margin: 20px;
+ 
 }
 
 div.capstone_text {
-
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }
 
 
-article.club {
-
-}
-
-div.club_inner {
-
-}
-
-h2.club_title {
-
+p.club_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
+    margin: 20px;
 }
 
 div.club_text {
-
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }
 
 
-article.certificate {
-
+p.certificate_title {
+    font-size: 30px;
+    background-color: #CAEDF3;
+    color: #fff;
+    margin: 20px;
 }
 
-div.certificate_inner {
-
-}
-
-h2.certificate_title {
-
-}
-
-div.certificate_text {
-
+div.certificat_text {
+    width: 1320px;
+    height: 450px;
+    margin: 20px;
+    border-radius: 5%;
 }

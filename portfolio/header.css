@@ -1,13 +1,8 @@
 header {
     position: relative;
     width: 1500px;
-    height: 50px;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    background-color: #fff;
+    height: 60px;
+    margin: 0 auto 0 auto;
     display: block;
     font-size: 20px;
 }
@@ -21,13 +16,16 @@ header::after {
 
 div.header_inner{
     height: 50px;
+    border-bottom: 2px solid lightgray;
 }
 
-strong.header_title{
-    left: 40px;
+h3.header_title{
+    float: left;
+    margin: 5px;
 }
 
 a.email {
+    margin: 5px;
     float: right;
     right: 40px;
 }

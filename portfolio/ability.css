@@ -1,74 +1,97 @@
 section.ability {
     position: relative;
-    background-color: #fafafa;
-    width: 91.875em;
-    height: 62.5em;
-    margin: 20px;
+    width: 1500px;
+    height: 55em;
+    margin: 0 20 0 20;
+    background-color:#CAEDF3;
 }
 
-article.learn {
-    width: 91.875em;
-    height: 300px;
-}
 
+
+/* Learn 관련 */
 h3.learn_title_1{
     float: left;
-    width: 680px;
-
+    width: 600px;
+    height: 300px;
+    border-radius: 7%;
+    margin-left: 75px;
+    margin-top: 50px;
+    padding: 20px;
+    color: #84D4E2;
 }
 
 ul.learning_list{
+    position: absolute;
     float: left;
-    width: 42.5em;
+    width: 25em;
     height: 250px;
-}
-
-li.learning_list_item{
-
+    margin-left: 30px;
+    color: black;
 }
 
 h3.learn_title_2{
-    float: right;   
-    width: 680px;
+    float: right;
+    width: 600px;
+    height: 300px;
+    border-radius: 7%;
+    margin-right: 75px;
+    margin-top: 50px;
+    padding: 20px;
+    color: #84D4E2;
 }
 
 ul.learn_list{
+    position: absolute;
     float: right;
-    width: 42.5em;
+    width: 25em;
     height: 250px;
+    margin-left: 30px;
+    color: black;
 }
 
-li.learn_list_item{
-
+li.learning_list_item, li.learn_list_item{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
-article.skill{
-    top: 50px;
-    width: 91.875em;
-    height: 600px;
 
+
+/* Skill 관련 */
+article.skill {
+    top: 420px;
+    width: 1350px;
+    height: 400px;
+    margin-left: 70px;
+    margin-top: 20px;
+    border-radius: 5%;
+    background-color: #ffffff;
 }
 
 h3.skill_title{
     font-size: 45px;
-    top: 35px;
     text-align: center;
     float: left;
-    width: 400px;
-    height: 500px;
-    left: 100px;
+    width: 500px;
+    height: 300px;
+    left: 60px;
+    bottom: 330px;
+    color: #84D4E2;
 }
 
 ul.skill_list{
-    top: 45px;
     float: right;
-    width: 800px;
-    height: 500px;
-    right: 100px;
+    width: 500px;
+    height: 300px;
+    right: 270px;
+    bottom: 310px;
+    color: black;
 }
 
 li.skill_list_item{
-    top: 35px;
-    margin-top: 50px;
+    top: 30px;
+    margin-top: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
 
 }

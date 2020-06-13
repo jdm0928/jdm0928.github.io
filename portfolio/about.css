@@ -1,8 +1,7 @@
 section.about {
     position: relative;
-    background-color: #fff;
-    margin: 20px;
-    width: 91.875em;
+    margin: 0 20px 20px 20px;
+    width: 1460px;
     height: 60em;
 }
 
@@ -14,7 +13,8 @@ div.about_inner {
 }
 
 div.profile{
-    top: 80px;
+    height: 300px;
+    top: 100px;
 }
 
 div.profile_photo {
@@ -23,15 +23,28 @@ div.profile_photo {
 
 span.photo {
     text-align: center;
-    width: 200px;
-    height: 350px;
-    margin-left: 140px;
-    margin-right: 140px;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-radius: 70%;
+    overflow: hidden;
+    border: 1px solid black;
 }
 
 img.photo {
     width: 200px;
-    height: 350px;
+    height: 300px;
+}
+
+div.profile_info {
+    height: 50px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+p.profile_name {
+
 }
 
 div.about_text_1{
@@ -44,21 +57,23 @@ div.about_text_1{
 
 div.about_text_2{
     float: left;
-    left: 100px;
     height: 400px;
     width: 1270px;
     margin-top: 30px;
+    margin-left: 100px;
+    text-align: center;
 }
 
 h2.about_text_item_1 {
+    color: #84D4E2;
     font-size: 40px;
-    top: 150px;
+    top: 75px;
     margin-top: 30px;
 }
 
 p.about_text_item_2{
-    font-size: 20px;
-    top: 60px;
+    font-size: 27px;
+    top: 30px;
     margin-top: 30px;
 }
 

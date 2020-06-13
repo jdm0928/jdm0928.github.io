@@ -2,14 +2,10 @@ footer {
     position: relative;
     width: 1500px;
     height: 60px;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-left: auto;
-    background-color: #fff;
+    margin: 0 auto 0 auto;
     display: block;
     font-size: 20px;
+    border-top: 2px solid lightgray;
 }
 
 footer::after {
@@ -26,7 +22,7 @@ div.footer_inner {
 
 div.sns {
     height: 3.125em;
-
+    margin-top: 5px;
 }
 
 a.footer_http_1 {
@@ -36,9 +32,8 @@ a.footer_http_1 {
 a.footer_copyright {
     font-size: 0.9375em;
     position: absolute;
-    left: 50%;
+    left: 45%;
     bottom: 22px;
-
     text-align: center;
     color: #adadad;
     letter-spacing: .04rem;
