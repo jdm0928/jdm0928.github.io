@@ -14,7 +14,7 @@ section.work {
     margin: 50px 0px 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 #competition {
@@ -24,7 +24,7 @@ section.work {
     margin: 50px 0 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 #hackathon {
@@ -34,7 +34,7 @@ section.work {
     margin: 50px 0 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 #capstone {
@@ -44,7 +44,7 @@ section.work {
     margin: 50px 0 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 #club {
@@ -54,7 +54,7 @@ section.work {
     margin: 50px 0 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 #certificate {
@@ -64,7 +64,7 @@ section.work {
     margin: 50px 0 50px 0;
     left: 30px;
     background-color: #CAEDF3;
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 
@@ -79,7 +79,8 @@ div.project_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
 
 
@@ -94,7 +95,8 @@ div.competition_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
 
 
@@ -109,7 +111,8 @@ div.hackathon_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
 
 
@@ -125,7 +128,8 @@ div.capstone_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
 
 
@@ -140,7 +144,8 @@ div.club_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
 
 
@@ -155,5 +160,6 @@ div.certificat_text {
     width: 1320px;
     height: 450px;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 15px;
+    background-color: #CAEDF3;
 }
