@@ -1,11 +1,10 @@
 section.ability {
     position: relative;
-    width: 1500px;
+    width: 1460px;
     height: 55em;
-    margin: 0 20 0 20;
+    margin: 0 20px 0 20px;
     background-color:#CAEDF3;
 }
-
 
 
 /* Learn 관련 */
@@ -14,8 +13,7 @@ h3.learn_title_1{
     width: 600px;
     height: 300px;
     border-radius: 7%;
-    margin-left: 75px;
-    margin-top: 50px;
+    margin: 50px 0 0 75px;
     padding: 20px;
     color: #84D4E2;
 }
@@ -34,8 +32,7 @@ h3.learn_title_2{
     width: 600px;
     height: 300px;
     border-radius: 7%;
-    margin-right: 75px;
-    margin-top: 50px;
+    margin: 50px 75px 0 0;
     padding: 20px;
     color: #84D4E2;
 }
@@ -50,9 +47,7 @@ ul.learn_list{
 }
 
 li.learning_list_item, li.learn_list_item{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px 20px 0 20px;
 }
 
 
@@ -62,8 +57,7 @@ article.skill {
     top: 420px;
     width: 1350px;
     height: 400px;
-    margin-left: 70px;
-    margin-top: 20px;
+    margin: 20px 0 0 70px;
     border-radius: 5%;
     background-color: #ffffff;
 }
@@ -90,8 +84,6 @@ ul.skill_list{
 
 li.skill_list_item{
     top: 30px;
-    margin-top: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 25px 40px 0 40px;
 
 }
