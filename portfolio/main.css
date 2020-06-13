@@ -12,7 +12,7 @@
 body {
     position: relative;
     height: 100%;
-    min-width: 360px;
+    min-width: 768px;
     overflow-y: auto;
     color: #141414;
     text-align: left;
