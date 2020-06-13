@@ -25,7 +25,8 @@ span.photo {
     text-align: center;
     width: 200px;
     height: 350px;
-    left: 140px;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 
 img.photo {

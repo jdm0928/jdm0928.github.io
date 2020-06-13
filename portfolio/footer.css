@@ -1,16 +1,18 @@
-#footer {
+footer {
     position: relative;
     width: 1500px;
+    height: 60px;
     margin: 0 auto;
     margin-top: 0px;
     margin-right: auto;
     margin-bottom: 0px;
     margin-left: auto;
-    text-align: center;
     background-color: #fff;
+    display: block;
+    font-size: 20px;
 }
 
-#footer::after {
+footer::after {
     display: table;
     clear: both;
     table-layout: fixed;
@@ -19,8 +21,7 @@
 
 
 div.footer_inner {
-
-
+    height: 50px;
 }
 
 div.sns {
@@ -29,11 +30,7 @@ div.sns {
 }
 
 a.footer_http_1 {
-    float: left;
-    margin: 10px;
-    font-size: 0.9375em;
-    text-decoration: none;
-    color: inherit;
+    left: 40px;
 }
 
 a.footer_copyright {
@@ -49,12 +46,6 @@ a.footer_copyright {
 
 a.footer_madeby {
     float: right;
-    margin: 10px;
-    font-size: 0.9375em;
-    margin-bottom: 6px;
-    font-size: 95%;
-    color: #474747;
-    text-align: right;
-    letter-spacing: .03rem;
+    right: 40px;
 
 }

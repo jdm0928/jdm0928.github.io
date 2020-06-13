@@ -2,6 +2,48 @@ section.contact {
     position: relative;
     background-color: #fff;
     width: 91.875em;
-    height: 200px;
+    height: 300px;
     margin: 20px;
+    text-align: center;
 }
+
+div.contact_inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 50px 50px 50px 50px;
+    text-align: center;
+}
+
+h2.contact_title {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -.015rem;
+    font-weight: 400;
+}
+
+div.contact_info {
+    display: inline-block;
+    position: relative;
+}
+
+a.contact_mail {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+p.contact_text {
+    margin-top: 26px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+    color: #747474;
+}
+
+/*@media screen and (max-width: 979px)*/
