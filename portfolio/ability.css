@@ -19,6 +19,7 @@ h3.learn_title_1{
 }
 
 ul.learning_list{
+    list-style: square;
     position: absolute;
     float: left;
     width: 25em;
@@ -38,6 +39,7 @@ h3.learn_title_2{
 }
 
 ul.learn_list{
+    list-style: square;
     position: absolute;
     float: right;
     width: 25em;
@@ -74,6 +76,7 @@ h3.skill_title{
 }
 
 ul.skill_list{
+    list-style: square;
     float: right;
     width: 500px;
     height: 300px;
