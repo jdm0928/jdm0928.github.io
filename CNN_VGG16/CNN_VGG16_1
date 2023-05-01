@@ -122,3 +122,5 @@ print('Test accuracy:', score[1])
 
 # 학습 과정 그래프 출력
 plot_history(history)
+
+![CNN1](https://user-images.githubusercontent.com/62337074/235460009-a3c6efe5-accb-4e1f-8e56-77c8c7da41cd.PNG)
