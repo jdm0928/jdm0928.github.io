@@ -1,0 +1,124 @@
+import pandas as pd
+import cv2
+import os
+import matplotlib.pyplot as plt
+import numpy as np
+
+from PIL import Image
+
+import tensorflow as tf
+tf.debugging.enable_check_numerics()
+from keras.applications.vgg16 import VGG16
+from keras.models import Sequential
+from keras.layers import Dense, Dropout, Flatten
+from keras.layers.convolutional import Conv2D, MaxPooling2D
+from keras.optimizers import Adam
+from keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
+from keras.preprocessing.image import ImageDataGenerator
+
+data_path = 'C:/Users/Jang Dong Min/Desktop/dataset'
+
+# ImageDataGenerator 생성
+datagen = ImageDataGenerator(
+    rescale=1./255,      # 픽셀값 범위를 0~1로 변환
+    rotation_range=20,   # 이미지 회전 각도 범위
+    zoom_range=0.2,      # 이미지 확대/축소 범위
+    width_shift_range=0.2, # 이미지 가로 이동 범위
+    height_shift_range=0.2, # 이미지 세로 이동 범위
+    horizontal_flip=True,
+    vertical_flip=True
+)
+
+# 데이터 경로 정의
+train_data_path = os.path.join(data_path, 'train')
+val_data_path = os.path.join(data_path, 'val')
+test_data_path = os.path.join(data_path, 'test')
+
+# 데이터 생성기 정의
+
+# 훈련 데이터 불러오기
+train_generator = datagen.flow_from_directory(
+    train_data_path,
+    target_size=(32, 32),
+    batch_size=64,
+    class_mode='categorical'
+)
+
+# 검증 데이터 생성
+val_generator = ImageDataGenerator(rescale=1./255).flow_from_directory(
+    val_data_path,
+    target_size=(32, 32),
+    batch_size=64,
+    class_mode='categorical'
+)
+
+
+# 테스트 데이터 불러오기
+test_generator = ImageDataGenerator(rescale=1./255).flow_from_directory(
+    test_data_path,
+    target_size=(32, 32),
+    batch_size=64,
+    class_mode='categorical'
+)
+
+
+# VGG16 모델 불러오기
+vgg_model = VGG16(include_top=False, input_shape=(32, 32, 3))
+
+# VGG16 모델의 출력을 추가적인 레이어로 연결하기
+model = Sequential()
+model.add(vgg_model)
+model.add(Flatten())
+model.add(Dense(256, activation='relu'))
+model.add(Dropout(0.5))
+model.add(Dense(14, activation='softmax'))
+
+# VGG16 모델의 레이어는 훈련되지 않도록 고정
+for layer in vgg_model.layers:
+    layer.trainable = False
+
+# 모델 컴파일
+model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+# ModelCheckpoint Callback 함수
+checkpoint = ModelCheckpoint('best_model.h5', monitor='val_accuracy', save_best_only=True)
+
+# EarlyStopping Callback 함수
+early_stop = EarlyStopping(monitor='val_accuracy', patience=5)
+
+# ReduceLROnPlateau Callback 함수
+reduce_lr = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=3)
+
+# 정확도와 손실 그래프 출력 함수
+def plot_history(history):
+    fig, ax = plt.subplots(2, 1, figsize=(10, 10))
+
+    ax[0].plot(history.history['accuracy'])
+    ax[0].plot(history.history['val_accuracy'])
+    ax[0].set_title('Model Accuracy')
+    ax[0].set_ylabel('Accuracy')
+    ax[0].set_xlabel('Epoch')
+    ax[0].legend(['Train', 'Validation'], loc='upper left')
+
+    ax[1].plot(history.history['loss'])
+    ax[1].plot(history.history['val_loss'])
+    ax[1].set_title('Model Loss')
+    ax[1].set_ylabel('Loss')
+    ax[1].set_xlabel('Epoch')
+    ax[1].legend(['Train', 'Validation'], loc='upper left')
+
+    plt.show()
+    
+model.summary()
+    
+# 모델 학습
+history = model.fit(train_generator, epochs=20, batch_size=64, validation_data=val_generator,
+                    validation_steps=len(val_generator), callbacks=[checkpoint, early_stop, reduce_lr])
+
+# 모델 평가
+score = model.evaluate(test_generator, verbose=0)
+print('Test loss:', score[0])
+print('Test accuracy:', score[1])
+
+# 학습 과정 그래프 출력
+plot_history(history)
