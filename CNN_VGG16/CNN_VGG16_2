@@ -122,3 +122,48 @@ print('Test accuracy:', score[1])
 
 # 학습 과정 그래프 출력
 plot_history(history)
+
+
+_________________________________________________________________
+Epoch 1/20
+668/668 [==============================] - 507s 754ms/step - loss: 1.1130 - accuracy: 0.6264 - val_loss: 0.5911 - val_accuracy: 0.8211 - lr: 0.0010
+Epoch 2/20
+668/668 [==============================] - 501s 750ms/step - loss: 0.7860 - accuracy: 0.7323 - val_loss: 0.4974 - val_accuracy: 0.8385 - lr: 0.0010
+Epoch 3/20
+668/668 [==============================] - 501s 749ms/step - loss: 0.7241 - accuracy: 0.7539 - val_loss: 0.4528 - val_accuracy: 0.8499 - lr: 0.0010
+Epoch 4/20
+668/668 [==============================] - 501s 750ms/step - loss: 0.6810 - accuracy: 0.7653 - val_loss: 0.4201 - val_accuracy: 0.8597 - lr: 0.0010
+Epoch 5/20
+668/668 [==============================] - 482s 722ms/step - loss: 0.6559 - accuracy: 0.7752 - val_loss: 0.4237 - val_accuracy: 0.8589 - lr: 0.0010
+Epoch 6/20
+668/668 [==============================] - 454s 680ms/step - loss: 0.6449 - accuracy: 0.7819 - val_loss: 0.3921 - val_accuracy: 0.8688 - lr: 0.0010
+Epoch 7/20
+668/668 [==============================] - 466s 697ms/step - loss: 0.6246 - accuracy: 0.7875 - val_loss: 0.3644 - val_accuracy: 0.8805 - lr: 0.0010
+Epoch 8/20
+668/668 [==============================] - 474s 710ms/step - loss: 0.6139 - accuracy: 0.7897 - val_loss: 0.3667 - val_accuracy: 0.8746 - lr: 0.0010
+Epoch 9/20
+668/668 [==============================] - 462s 692ms/step - loss: 0.6078 - accuracy: 0.7922 - val_loss: 0.3514 - val_accuracy: 0.8816 - lr: 0.0010
+Epoch 10/20
+668/668 [==============================] - 451s 674ms/step - loss: 0.5894 - accuracy: 0.7955 - val_loss: 0.3717 - val_accuracy: 0.8718 - lr: 0.0010
+Epoch 11/20
+668/668 [==============================] - 460s 689ms/step - loss: 0.5894 - accuracy: 0.7987 - val_loss: 0.3584 - val_accuracy: 0.8784 - lr: 0.0010
+Epoch 12/20
+668/668 [==============================] - 465s 696ms/step - loss: 0.5867 - accuracy: 0.7987 - val_loss: 0.3572 - val_accuracy: 0.8767 - lr: 0.0010
+Epoch 13/20
+668/668 [==============================] - 469s 702ms/step - loss: 0.5422 - accuracy: 0.8150 - val_loss: 0.3313 - val_accuracy: 0.8893 - lr: 2.0000e-04
+Epoch 14/20
+668/668 [==============================] - 473s 708ms/step - loss: 0.5314 - accuracy: 0.8203 - val_loss: 0.3270 - val_accuracy: 0.8921 - lr: 2.0000e-04
+Epoch 15/20
+668/668 [==============================] - 460s 689ms/step - loss: 0.5280 - accuracy: 0.8193 - val_loss: 0.3240 - val_accuracy: 0.8900 - lr: 2.0000e-04
+Epoch 16/20
+668/668 [==============================] - 454s 680ms/step - loss: 0.5338 - accuracy: 0.8181 - val_loss: 0.3190 - val_accuracy: 0.8923 - lr: 2.0000e-04
+Epoch 17/20
+668/668 [==============================] - 452s 677ms/step - loss: 0.5296 - accuracy: 0.8201 - val_loss: 0.3182 - val_accuracy: 0.8915 - lr: 2.0000e-04
+Epoch 18/20
+668/668 [==============================] - 453s 678ms/step - loss: 0.5273 - accuracy: 0.8207 - val_loss: 0.3231 - val_accuracy: 0.8896 - lr: 2.0000e-04
+Epoch 19/20
+668/668 [==============================] - 453s 677ms/step - loss: 0.5220 - accuracy: 0.8242 - val_loss: 0.3175 - val_accuracy: 0.8932 - lr: 2.0000e-04
+Epoch 20/20
+668/668 [==============================] - 454s 679ms/step - loss: 0.5340 - accuracy: 0.8195 - val_loss: 0.3208 - val_accuracy: 0.8911 - lr: 2.0000e-04
+Test loss: 0.34227442741394043
+Test accuracy: 0.882001519203186
